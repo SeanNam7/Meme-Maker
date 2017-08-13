@@ -11,21 +11,21 @@
 
 <body>
   <header class="heading">
-    <h3 class="mememaker">Meme Maker</h3>
+    <span class="mememaker">Meme Maker</span>
   </header>
 
   <div class="container">
-    <div id='d1' style="position:absolute; top:25%; left:10%; z-index: -1">
-      <canvas id="canvas" width="500" height="500"></canvas>
+    <div id="canvas" style="position:absolute; top:20%; left:5%; z-index: -1">
+      <canvas width="500" height="500"></canvas>
       <div class="input">
         <span>Top Line:</span><br>
         <input id="topLineText" type="text"><br/>
         <span>Bottom Line:</span><br>
         <input id="bottomLineText" type="text"><br/>
-        <button id="saveBtn">Save</button>
+        <button id="saveBtn" class="button">Save</button>
         <div>
           <!-- <input> elements with type="file" lets the user pick one or more files -->
-          <input type="file" id="file">
+          <input id="file" class="button" type="file">
         </div>
       </div>
     </div>
