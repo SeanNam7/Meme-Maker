@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <title>MemeMaker-Simple</title>
-
+  <meta charset="utf-8">
+  <title>MemeMaker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header class="heading">
+    <h3 class="mememaker">Meme Maker</h3>
+  </header>
+
+  <div class="container">
+    <div id='d1' style="position:absolute; top:25%; left:10%; z-index: -1">
+      <canvas id="canvas" width="500" height="500"></canvas>
+      <div class="input">
+        <span>Top Line:</span><br>
+        <input id="topLineText" type="text"><br/>
+        <span>Bottom Line:</span><br>
+        <input id="bottomLineText" type="text"><br/>
+        <button id="saveBtn">Save</button>
+        <div>
+          <!-- <input> elements with type="file" lets the user pick one or more files -->
+          <input type="file" id="file">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
